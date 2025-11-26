@@ -1,0 +1,42 @@
+/* Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styling */
+body {
+  @apply font-sans;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(30, 126, 52, 0.5); /* green tone */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(30, 126, 52, 0.8);
+}
+
+/* Optional: default transition for buttons */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Optional: default link style */
+a {
+  transition: color 0.2s ease-in-out;
+}
